@@ -45,7 +45,6 @@ const useWindowStore = create(
         win.zIndex = state.nextZIndex;
         state.nextZIndex += 1;
       }),
-  }))
+}))
 );
-
 export default useWindowStore;
