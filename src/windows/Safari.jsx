@@ -9,7 +9,7 @@ const Safari = () => {
             <div id="window-header" className="safari-header">
                 <WindowControlls target="safari" />
                 <PanelLeft className="ml-1 icon" />
-                
+
                 <div className="flex items-center gap-3">
                     <ChevronLeft className="icon" />
                     <ChevronRight className="icon" />

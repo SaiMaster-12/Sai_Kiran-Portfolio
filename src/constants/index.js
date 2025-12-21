@@ -90,46 +90,50 @@ const blogPosts = [
     image: "/images/blog2.png",
     link: "https://medium.com/@saikiranjavalkar/turning-an-idea-into-impact-building-a-scalable-serverless-feedback-system-on-aws-fa968a5053b8",
   },
-  {
-    id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
-    image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
-  },
-  {
-    id: 4,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
-    image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
-  },
+  // {
+  //   id: 3,
+  //   date: "Aug 15, 2025",
+  //   title: "The Ultimate Guide to Mastering GSAP Animations",
+  //   image: "/images/blog3.png",
+  //   link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+  // },
+  // {
+  //   id: 4,
+  //   date: "Aug 15, 2025",
+  //   title: "The Ultimate Guide to Mastering GSAP Animations",
+  //   image: "/images/blog3.png",
+  //   link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+  // },
 ];
 
 const techStack = [
   {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
+    items: ["HTML", "CSS", "JS", "React.js"],
   },
   {
-    category: "Mobile",
-    items: ["React Native", "Expo"],
-  },
-  {
-    category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    category: "Styling Frameworks",
+    items: ["Tailwind CSS"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["Node.js", "Flask"],
   },
   {
     category: "Database",
-    items: ["MongoDB", "PostgreSQL"],
+    items: ["MongoDB", "MySQL", "Firebase", "AWS DynamoDB", "Amazon RDS"],
+  },
+  {
+    category: "Mobile",
+    items: ["Java", "XML"],
+  },
+  {
+    category: "Cloud",
+    items: ["AWS", "Firebase"],
   },
   {
     category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    items: ["Git", "GitHub"],
   },
 ];
 
@@ -143,24 +147,24 @@ const socials = [
   },
   {
     id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
-  },
-  {
-    id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
-  },
-  {
-    id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    link: "https://www.linkedin.com/in/sai-kiran-javalkar-27757b267/",
+  },
+  {
+    id: 3,
+    text: "Email",
+    icon: "/icons/email.svg",
+    bg: "#4bcb63",
+    link: "mailto:saikiranjavalkar@gmail.com?subject=Let%E2%80%99s%20Connect",
+  },
+  {
+    id: 4,
+    text: "Twitter/X",
+    icon: "/icons/twitter.svg",
+    bg: "#ff866b",
+    link: "https://x.com/Sai_Master_10",
   },
 ];
 
@@ -229,10 +233,60 @@ const WORK_LOCATION = {
   icon: "/icons/work.svg",
   kind: "folder",
   children: [
+    // ▶ Project 2
+    {
+      id: 6,
+      name: "Pothole Detection System",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-52 right-80",
+      windowPosition: "top-[20vh] left-5",
+      children: [
+        {
+          id: 1,
+          name: "Pothole Detection System",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 right-10",
+          description: [
+            "A real-time pothole detection system using YOLOv8 and Raspberry Pi 4 that alerts road authorities via email.",
+          ],
+        },
+        {
+          id: 2,
+          name: "Pothole Detection System.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://medium.com/@saikiranjavalkar/what-if-roads-could-report-their-own-damage-a5b5fa06e234",
+          position: "top-20 left-20",
+        },
+        {
+          id: 4,
+          name: "Pothole.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 left-80",
+          imageUrl: "/images/ph_0_80.jpeg",
+        },
+        {
+          id: 5,
+          name: "Design.fig",
+          icon: "/images/plain.png",
+          kind: "file",
+          fileType: "fig",
+          href: "https://github.com/SaiMaster-12/Pothole-Detection-System.git",
+          position: "top-60 left-5",
+        },
+      ],
+    },
+
     // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "Serverless Feedback System",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -240,35 +294,35 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "SFS.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+            "The Serverless Feedback Management System is a clean and efficient platform designed to collect user feedback seamlessly from any website.",
+            "Instead of a traditional backend with servers, it uses a fully serverless architecture to ensure scalability, reliability, and low operational cost.",
+            "Think of it as a smart digital feedback box that instantly stores responses and notifies the admin—without worrying about infrastructure.",
+            "It is built using :contentReference[oaicite:0]{index=0} services like API Gateway, Lambda, DynamoDB, and SES, delivering fast performance, high availability, and secure data handling."
           ],
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "serverless feedback system.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://medium.com/@saikiranjavalkar/turning-an-idea-into-impact-building-a-scalable-serverless-feedback-system-on-aws-fa968a5053b8",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "nike.png",
+          name: "sfs.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-1.png",
+          imageUrl: "/images/blog2.png",
         },
         {
           id: 5,
@@ -276,105 +330,53 @@ const WORK_LOCATION = {
           icon: "/images/plain.png",
           kind: "file",
           fileType: "fig",
-          href: "https://google.com",
+          href: "https://github.com/SaiMaster-12/Serverless-Feedback-System.git",
           position: "top-60 right-20",
         },
       ],
     },
 
-    // ▶ Project 2
-    {
-      id: 6,
-      name: "AI Resume Analyzer",
-      icon: "/images/folder.png",
-      kind: "folder",
-      position: "top-52 right-80",
-      windowPosition: "top-[20vh] left-7",
-      children: [
-        {
-          id: 1,
-          name: "AI Resume Analyzer Project.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-5 right-10",
-          description: [
-            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
-          ],
-        },
-        {
-          id: 2,
-          name: "ai-resume-analyzer.com",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
-          position: "top-20 left-20",
-        },
-        {
-          id: 4,
-          name: "ai-resume-analyzer.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-52 left-80",
-          imageUrl: "/images/project-2.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 left-5",
-        },
-      ],
-    },
 
     // ▶ Project 3
     {
       id: 7,
-      name: "Food Delivery App",
+      name: "Air Quality Monitering System",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
-      windowPosition: "top-[33vh] left-7",
+      windowPosition: "top-[35vh] left-5",
       children: [
         {
           id: 1,
-          name: "Food Delivery App Project.txt",
+          name: "Air Quality Monitering System.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-            "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-            "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-            "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+            "The Air Quality Monitoring System is a smart IoT-based solution designed to track environmental and air quality conditions in real time.",
+            "Instead of relying on manual checks, it continuously collects data from multiple sensors and streams it to a live web dashboard.",
+            "Think of it as a digital watchdog for indoor air—constantly measuring, analyzing, and warning before conditions become unsafe.",
+            "It is built using Arduino, ESP8266, Python Flask, and :contentReference[oaicite:0]{index=0}, combining real-time visualization, predictive analysis, and automated alerts for critical CO₂ levels."
           ],
         },
         {
           id: 2,
-          name: "food-delivery-app.com",
+          name: "Monitering System.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+          href: "https://www.google.com/",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "food-delivery-app.png",
+          name: "AQMS.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-3.png",
+          imageUrl: "/images/AQMS.png",
         },
         {
           id: 5,
@@ -382,7 +384,7 @@ const WORK_LOCATION = {
           icon: "/images/plain.png",
           kind: "file",
           fileType: "fig",
-          href: "https://google.com",
+          href: "https://github.com/SaiMaster-12/Air-Quality-Monitoring-System.git",
           position: "top-60 right-20",
         },
       ],
@@ -404,7 +406,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
+      imageUrl: "/images/photo.jpeg",
     },
     {
       id: 2,
@@ -413,7 +415,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
+      imageUrl: "/images/casual.jpeg",
     },
     {
       id: 3,
@@ -422,7 +424,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
+      imageUrl: "/images/group.jpeg",
     },
     {
       id: 4,
@@ -432,7 +434,7 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
+      image: "/images/mee.jpeg",
       description: [
         "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
         "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
