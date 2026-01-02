@@ -1,16 +1,112 @@
-# React + Vite
+# Sai_Kiran-Portfolio 
+macOS-Inspired Interactive Portfolio Desktop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Not just a portfolio. An operating-system-like experience — inside your browser.**
 
-Currently, two official plugins are available:
+This project recreates the **look, feel, and behavior of macOS** using modern frontend technologies.  
+Windows float, apps open, content scrolls naturally — just like a real desktop.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Live Demo (Try it yourself)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 **Deployed Link:** [Deployed Link](https://wonderful-glacier-0e4d75610.2.azurestaticapps.net/)
 
-## Expanding the ESLint configuration
+>  Tip: Open it on desktop for the best experience.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## What Makes This Project Special?
+
+This is **not** a static website.
+This is **not** a normal React app.  
+
+It’s a **desktop simulation** built from scratch.
+
+### Core Highlights
+
+-  **Real Window System**
+  - Open / Close / Focus windows
+  - Proper z-index stacking
+  - macOS-style traffic light controls
+
+-  **Finder-Like Experience**
+  - Sidebar navigation
+  - Folder-style interactions
+  - Clean, native layout
+
+-  **Photos / Gallery App**
+  - Displays images from `public/images`
+  - Click → opens Image Viewer window
+  - Minimal, clean macOS grid layout
+
+-  **Safari-Style Browser App**
+  - Custom Safari UI header
+  - Blog listing inside a browser window
+
+-  **Resume PDF Viewer**
+  - Multi-page PDF rendering
+  - Smooth scrolling
+  - Fixed window header (like Preview on macOS)
+
+-  **macOS Look & Feel**
+  - Desktop wallpaper
+  - Dock at the bottom
+  - Native spacing & layout patterns
+
+---
+
+## Why This Project Stands Out
+
+Most portfolios show:
+- Pages  
+- Sections  
+- Cards  
+
+This one shows:
+- **Architecture**
+- **State management**
+- **Complex UI behavior**
+- **Real debugging skills**
+
+It demonstrates how to:
+- Build a **window manager**
+- Handle **scroll, height, and overflow correctly**
+- Design **desktop-grade UI systems** in React
+
+---
+
+## Tech Stack
+
+| Category | Tools |
+|-------|------|
+| Frontend | React (Vite) |
+| State Management | Zustand + Immer |
+| Styling | Tailwind CSS |
+| Icons | Lucide-react |
+| PDF Rendering | react-pdf |
+| Architecture | Window-based Desktop UI |
+
+---
+
+## Why I Built This
+
+This project was built to:
+- Create something memorable.
+- Break away from boring portfolios.
+- Showcase real frontend engineering.
+- Prove understanding of complex UI systems.
+
+---
+
+## Future Enhancements
+- Window resizing & snapping
+- Fullscreen mode
+- Keyboard shortcuts
+- Finder breadcrumb navigation
+- Albums & metadata in Photos
+- Smooth animations & transitions
+
+---
+
+If you found this project interesting, feel free to star ⭐ the repository!
