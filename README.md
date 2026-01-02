@@ -25,31 +25,31 @@ It’s a **desktop simulation** built from scratch.
 
 ### Core Highlights
 
--  **Real Window System**
+1. **Real Window System**
   - Open / Close / Focus windows
   - Proper z-index stacking
   - macOS-style traffic light controls
 
--  **Finder-Like Experience**
+2. **Finder-Like Experience**
   - Sidebar navigation
   - Folder-style interactions
   - Clean, native layout
 
--  **Photos / Gallery App**
+3. **Photos / Gallery App**
   - Displays images from `public/images`
   - Click → opens Image Viewer window
   - Minimal, clean macOS grid layout
 
--  **Safari-Style Browser App**
+4. **Safari-Style Browser App**
   - Custom Safari UI header
   - Blog listing inside a browser window
 
--  **Resume PDF Viewer**
+5. **Resume PDF Viewer**
   - Multi-page PDF rendering
   - Smooth scrolling
   - Fixed window header (like Preview on macOS)
 
--  **macOS Look & Feel**
+6. **macOS Look & Feel**
   - Desktop wallpaper
   - Dock at the bottom
   - Native spacing & layout patterns
